@@ -1,0 +1,676 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="4b9b01c7-dfcf-4e25-ba01-cff2867b5472" created="3.0.0" activeEnvironment="Default environment" name="REST Project 1" resourceRoot="" updated="3.0.0 2019-11-05T14:42:03Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Slack Channel(s)" value=""/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com TestSuite"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Slack Access Token" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-3.0.0\bin"/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
+  </con:settings>
+  <con:interface xsi:type="con:RestService" id="d48e1f7d-838a-4554-a234-70bcceffa6a3" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:settings/>
+    <con:definitionCache type="TEXT" rootPart=""/>
+    <con:endpoints>
+      <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+    </con:endpoints>
+    <con:resource name="" path="/peps" id="6460a266-afb7-46f1-aa29-eeb30e0931a7">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="" id="ea6f9e05-f3bc-462c-a5c5-91f7444baa32" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>text/html; charset=utf-8</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200 201</con:status>
+          <con:params/>
+          <con:element>Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:request name="GetData" id="2d736f18-ab3c-46f1-99dd-224dbd99a778" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="CreateNewEntry" id="00d3dcd5-8795-4c1c-9ba9-218490605bd8" method="POST">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>201</con:status>
+          <con:params/>
+          <con:element xmlns:peps="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps">peps:Response</con:element>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="FAULT">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+          <con:element xmlns:peps="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps">peps:Fault</con:element>
+        </con:representation>
+        <con:request name="CreateNewEntry" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+          <con:request>{   
+   "country" : "RO",
+   "name" : "Nicolae Oprean",
+   "position" : "QA Engineer",
+   "risk" : 7,
+   "yob" : 1982
+}</con:request>
+          <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+          <con:parameterOrder/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="" path="/peps/{id}" id="539da10c-51ce-41a5-9b3c-69d43ad75406">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>id</con:name>
+          <con:value>id</con:value>
+          <con:style>TEMPLATE</con:style>
+          <con:default>id</con:default>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="Method 1" id="e3fe4722-b1d1-4243-8565-cf09d4fa98ac" method="GET">
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="FAULT">
+          <con:mediaType>text/html</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+          <con:element>html</con:element>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:element xmlns:ns="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps/1">ns:Response</con:element>
+        </con:representation>
+        <con:request name="Request 1" id="a9583a03-b15b-436e-8e72-4216839f6eb1" mediaType="application/json">
+          <con:settings>
+            <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+          </con:settings>
+          <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+          <con:request/>
+          <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps/1</con:originalUri>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters>
+            <con:entry key="id" value="1"/>
+          </con:parameters>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="d35b545c-ede5-4053-82df-7273d6a217a2" name="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com TestSuite">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="c5fca448-9a4f-4834-a975-5471db2cdc5f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com TestCase 1" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>6</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="AllTheData" id="0bd5871f-93b7-4ede-817f-ed96dca7847d">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="AllTheData" id="2d736f18-ab3c-46f1-99dd-224dbd99a778" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="804d9761-5731-42ff-ae9a-4ab49c4fabd1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="3120e774-61ca-479e-80a3-540cf4865fa4" name="Response SLA">
+              <con:configuration>
+                <SLA>500</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add new entry by filling in correct data" id="2037dc1a-a8bb-4331-bb46-64dd4b924e43">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add new entry by filling in correct data" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request>{   
+   "country" : "RO",
+   "name" : "Nicolae Oprean",
+   "position" : "QA Engineer",
+   "risk" : 7,
+   "yob" : 1982
+}</con:request>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+            <con:assertion type="JsonPath Existence Match" id="3064a724-9493-4c48-9ddc-80db6bfd3198" name="Check for existence of [id]">
+              <con:configuration>
+                <path>$['id']</path>
+                <content>true</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetEntryById" id="5f620464-4a6c-49e7-845a-8c4324522726">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetEntryById" id="a9583a03-b15b-436e-8e72-4216839f6eb1" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps/1</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="5c6a8d31-49f8-45ea-94ea-371a804a62ec" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="04eb4eb8-de78-43d3-b948-69aaf1332e1f" name="Response SLA">
+              <con:configuration>
+                <SLA>200</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="${Add new entry by filling in correct data#Response#$['id']}"/>
+            </con:parameters>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add new entry Without specifying Name" id="041b471d-558d-4a9f-b951-382876da1d72">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add new entry Without specifying Name" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request>{   
+   "country" : "RO",
+   "position" : "QA Engineer",
+   "risk" : 7,
+   "yob" : 1982
+}</con:request>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+            <con:assertion type="JsonPath Match" id="d6ebf702-e63a-4210-912a-ba46f0bcb4ec" name="Match content of [message]">
+              <con:configuration>
+                <path>$['message']</path>
+                <content>"Invalid request - missing parameters"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add new entry Without specifying Country" id="aa024952-2e88-4d71-be76-fcd1b2031873" disabled="true">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add new entry Without specifying Country" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request>{   
+   "name" : "Nicolae Oprean",
+   "position" : "QA Engineer",
+   "risk" : 7,
+   "yob" : 1982
+}</con:request>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+            <con:assertion type="JsonPath Match" id="d6ebf702-e63a-4210-912a-ba46f0bcb4ec" name="Match content of [message]">
+              <con:configuration>
+                <path>$['message']</path>
+                <content>"Invalid request - missing parameters"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add new entry Without specifying the Position" id="ba611170-8b04-4e9a-be6e-e54ebef166cc">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add new entry Without specifying the Position" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request>{   
+   "country" : "RO",
+   "name" : "Nicolae Oprean",
+   "risk" : 7,
+   "yob" : 1982
+}</con:request>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+            <con:assertion type="JsonPath Match" id="d6ebf702-e63a-4210-912a-ba46f0bcb4ec" name="Match content of [message]">
+              <con:configuration>
+                <path>$['message']</path>
+                <content>"Invalid request - missing parameters"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add new entry Without specifying the risk" id="e5147fd0-1937-4105-962a-a87a71cda6b6" disabled="true">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add new entry Without specifying the risk" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request>{   
+   "country" : "RO",
+   "name" : "Nicolae Oprean",
+   "position" : "QA Engineer",
+   "yob" : 1982
+}</con:request>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+            <con:assertion type="JsonPath Match" id="d6ebf702-e63a-4210-912a-ba46f0bcb4ec" name="Match content of [message]">
+              <con:configuration>
+                <path>$['message']</path>
+                <content>"Invalid request - missing parameters"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="Add new entry Without specifying the yob" id="0260d94b-8b04-4fec-9062-4d6f9b50b541">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="Add new entry Without specifying the yob" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request>{   
+   "country" : "RO",
+   "name" : "Nicolae Oprean",
+   "position" : "QA Engineer",
+   "risk" : 7
+}</con:request>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+            <con:assertion type="JsonPath Match" id="d6ebf702-e63a-4210-912a-ba46f0bcb4ec" name="Match content of [message]">
+              <con:configuration>
+                <path>$['message']</path>
+                <content>"Invalid request - missing parameters"</content>
+                <allowWildcards>false</allowWildcards>
+                <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+                <ignoreComments>false</ignoreComments>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="GetTheDataOneMoreTime" id="e2a761c5-1817-47a3-8d63-2cfd2d446570">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GetTheDataOneMoreTime" id="2d736f18-ab3c-46f1-99dd-224dbd99a778" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/</con:originalUri>
+            <con:assertion type="Valid HTTP Status Codes" id="804d9761-5731-42ff-ae9a-4ab49c4fabd1" name="Valid HTTP Status Codes">
+              <con:settings/>
+              <con:configuration>
+                <codes>200</codes>
+              </con:configuration>
+            </con:assertion>
+            <con:assertion type="Response SLA Assertion" id="3120e774-61ca-479e-80a3-540cf4865fa4" name="Response SLA">
+              <con:configuration>
+                <SLA>500</SLA>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>0bd5871f-93b7-4ede-817f-ed96dca7847d</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>e2a761c5-1817-47a3-8d63-2cfd2d446570</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>5f620464-4a6c-49e7-845a-8c4324522726</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>2037dc1a-a8bb-4331-bb46-64dd4b924e43</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>aa024952-2e88-4d71-be76-fcd1b2031873</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>041b471d-558d-4a9f-b951-382876da1d72</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>ba611170-8b04-4e9a-be6e-e54ebef166cc</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>e5147fd0-1937-4105-962a-a87a71cda6b6</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>0260d94b-8b04-4fec-9062-4d6f9b50b541</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:testSuite id="823ac69d-661e-48a9-b00e-56b61df91c4d" name="REST Project 1 TestSuite 1">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="ba6ffb3a-10a0-45a2-aad8-adb6a37030a8" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/peps-GetData TestCase" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="GET Request" id="5b7c2a33-fc9d-456d-999e-3095025c9105">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GET Request" id="2d736f18-ab3c-46f1-99dd-224dbd99a778" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="1a0038c1-24ac-4e75-9f9d-92714e82e402" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/peps-CreateNewEntry TestCase" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="POST Request" id="14ee5bdb-690f-44b4-8bb8-53e1738afbcf">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="POST Request" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request>{   
+   "country" : "RO",
+   "name" : "Nicolae Oprean",
+   "position" : "QA Engineer",
+   "risk" : 7,
+   "yob" : 1982
+}</con:request>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters/>
+            <con:parameterOrder/>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:testCase id="6a047383-15a1-4d05-8b25-77d903b1ef3e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="/peps/{id}-Request 1 TestCase" searchProperties="true" timeout="0">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="restrequest" name="GET Request" id="abf59756-6b70-41b5-a844-2f86731180d6">
+        <con:settings/>
+        <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps/{id}" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="GET Request" id="a9583a03-b15b-436e-8e72-4216839f6eb1" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com/peps/1</con:originalUri>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <con:entry key="id" value="1"/>
+            </con:parameters>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:properties/>
+      <con:reportParameters/>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties/>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest">
+    <con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script>
+  </con:eventHandlers>
+  <con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep">
+    <con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script>
+  </con:eventHandlers>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
