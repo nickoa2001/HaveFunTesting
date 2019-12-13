@@ -184,8 +184,14 @@
     <con:settings/>
     <con:savedRecentRuns>1</con:savedRecentRuns>
     <con:runType>SEQUENTIAL</con:runType>
-    <con:testCase id="c5fca448-9a4f-4834-a975-5471db2cdc5f" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com TestCase 1" searchProperties="true" timeout="0">
-      <con:settings/>
+    <con:testCase id="c5fca448-9a4f-4834-a975-5471db2cdc5f" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com TestCase 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" zephyrTestName="" zephyrTestId="">
+      <con:settings>
+        <con:setting id="IncludeOverview">true</con:setting>
+        <con:setting id="IncludeResults">true</con:setting>
+        <con:setting id="FlowLayout">false</con:setting>
+        <con:setting id="ErrorDetails">true</con:setting>
+        <con:setting id="IncludeCoverage">true</con:setting>
+      </con:settings>
       <con:savedRecentRuns>6</con:savedRecentRuns>
       <con:testStep type="restrequest" name="AllTheData" id="0bd5871f-93b7-4ede-817f-ed96dca7847d">
         <con:settings/>
@@ -318,7 +324,7 @@
           </con:restRequest>
         </con:config>
       </con:testStep>
-      <con:testStep type="restrequest" name="Add new entry Without specifying Country" id="aa024952-2e88-4d71-be76-fcd1b2031873" disabled="true">
+      <con:testStep type="restrequest" name="Add new entry Without specifying Country" id="aa024952-2e88-4d71-be76-fcd1b2031873">
         <con:settings/>
         <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="Add new entry Without specifying Country" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
@@ -386,7 +392,7 @@
           </con:restRequest>
         </con:config>
       </con:testStep>
-      <con:testStep type="restrequest" name="Add new entry Without specifying the risk" id="e5147fd0-1937-4105-962a-a87a71cda6b6" disabled="true">
+      <con:testStep type="restrequest" name="Add new entry Without specifying the risk" id="e5147fd0-1937-4105-962a-a87a71cda6b6">
         <con:settings/>
         <con:config service="http://ec2-34-250-139-60.eu-west-1.compute.amazonaws.com" resourcePath="/peps" methodName="CreateNewEntry" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
           <con:restRequest name="Add new entry Without specifying the risk" id="9474d7ac-9172-4679-bd54-92947f5d6718" mediaType="application/json" postQueryString="false">
